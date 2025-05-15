@@ -1,0 +1,160 @@
+ body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #1a1a1a;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+    .navbar {
+      background-color: #141414;
+      padding: 1rem 0;
+    }
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #00cc88 !important;
+    }
+    .nav-link {
+      color: #ffffff !important;
+      margin-left: 1.5rem;
+      transition: color 0.3s;
+    }
+    .nav-link.active{
+        background-color: #00b377;
+        padding: 10px;
+        border-radius: 10px;
+        color: #fff;
+    }
+    .social-icons .bx{
+        font-size: 50px;
+    }
+    .nav-link:hover {
+      color: #00cc88 !important;
+    }
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1516321310764-2f51c5a64972');
+      background-size: cover;
+      background-position: center;
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 600;
+    }
+    .hero p {
+      font-size: 1.5rem;
+      max-width: 600px;
+      margin: 1rem auto;
+    }
+    .btn-accent {
+      background-color: #00cc88;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+    .btn-accent:hover {
+      background-color: #00b377;
+    }
+    .section {
+      padding: 5rem 0;
+    }
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      text-align: center;
+      color: #00cc88;
+    }
+    .skill-card, .project-card,.experience-card {
+      background-color: #2a2a2a;
+      border: none;
+      transition: transform 0.3s;
+      color: #fff;
+    }
+    .skill-card:hover, .project-card:hover ,.experience-card:hover {
+      transform: translateY(-10px);
+    }
+    .img{
+        height: 210px !important;
+        border: 1px solid red;
+    }
+    .skill-card p {
+      font-size: 0.85rem;
+      margin-top: 0.5rem;
+      display: -webkit-box;
+      line-clamp: 4;
+      box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 1.4;
+    }
+    .contact-form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .form-control {
+      background-color: #2a2a2a;
+      border: 1px solid #444;
+      color: #ffffff;
+    }
+    .form-control:focus {
+      border-color: #00cc88;
+      box-shadow: 0 0 5px rgba(0, 204, 136, 0.5);
+    }
+    .footer {
+      background-color: #141414;
+      padding: 2rem 0;
+      text-align: center;
+    }
+    .social-icons a {
+      color: #ffffff;
+      font-size: 1.5rem;
+      margin: 0 0.5rem;
+      transition: color 0.3s;
+    }
+    .social-icons a:hover {
+      color: #00cc88;
+    }
+    .about-img{
+        height: 200px;
+        width: 200px;
+        margin: 10px auto;
+        cursor: pointer;
+        
+    }
+    .about-img img:hover{
+        transform: translate(-10px, -10px);
+    }
+    .about-img img{
+        width: 100%;
+        border-radius: 50%;
+        animation: float 1s ease-in-out infinite alternate;
+    transition: height 1s;
+    }
+
+
+    @keyframes float {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0px,10px);
+    }
+}
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      .hero p {
+        font-size: 1.2rem;
+      }
+      .section-title {
+        font-size: 2rem;
+      }
+      .skill-card p {
+        font-size: 0.8rem;
+      }
+    }
